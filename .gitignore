@@ -1,2 +1,5 @@
 data
 scripts/exploration/lpascual.code-workspace
+*config.py
+.venv-notebook
+*__pycache__/
