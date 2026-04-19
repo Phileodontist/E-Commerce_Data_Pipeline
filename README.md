@@ -4,6 +4,13 @@ An End-to-End data pipeline that ingests raw event logs from an e-commerce websi
 ## Synopsis
 This project was intended to showcase a production ready End-to-End pipeline that is maintainable, interopable, and scalable by leveraging cloud services from AWS such as Step Functions, DynamoDB, Glue, Redshift, S3.
 
+Achieves the following:
+* Data governance through data retention and access controls using S3 lifecycle and IAM role-based policies
+* Schema evolution; using Glue Schema registry to track schemas changes
+* Slow Changing Dimensions Type 2 (SCD2); captures historic data versus overwriting
+* Infrastructure reproducibility through Infrastructure as Code (IaC) via CloudFormation
+* Workflow-progression tracking via Lambda Functions, using DynamoDB as a metadata store
+
 <!--#### Developer's Note-->
 
 ## Data & Data Models
