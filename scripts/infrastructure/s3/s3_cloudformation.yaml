@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Create S3 buckets and folder prefixes for e-commerce pipeline"
+
+Resources:
+
+  BronzeBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: lp-ecommerce-bronze
+
+  SilverBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: lp-ecommerce-silver
+
+  GoldBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: lp-ecommerce-gold
+
+Outputs:
+  BronzeBucketName:
+    Value: !Ref BronzeBucket
+  SilverBucketName:
+    Value: !Ref SilverBucket
+  GoldBucketName:
+    Value: !Ref GoldBucket

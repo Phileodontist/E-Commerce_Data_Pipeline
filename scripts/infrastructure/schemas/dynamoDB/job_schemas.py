@@ -1,16 +1,8 @@
-ingestion_job = {
-    "PK": "JOB#INGESTION",
-    "SK": "META",
-    "type": "job",
-    "description": "Converts csv files to parquet format, basic parsing, and captures ingestion metadata",
-    "is_active": True
-}
-
 bronzetransformation_job = {
     "PK": "JOB#BRONZETRANSFORM",
     "SK": "META",
     "type": "job",
-    "description": "Applies basic transformations (type casting, renaming columns, etc), detects schema drift.)",
+    "description": "Converts csv files to parquet format, basic parsing, and captures ingestion metadata",
     "is_active": True
 }
 
@@ -38,4 +30,4 @@ copy2redshift_job = {
     "is_active": True
 }
 
-job_schemas = [ingestion_job, bronzetransformation_job, silvertransformation_job, goldtransformation_job, copy2redshift_job]
+job_schemas = [bronzetransformation_job, silvertransformation_job, goldtransformation_job, copy2redshift_job]

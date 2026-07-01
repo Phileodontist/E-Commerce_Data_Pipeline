@@ -3,3 +3,4 @@ scripts/exploration/lpascual.code-workspace
 *config.py
 .venv-notebook
 *__pycache__/
+.vscode/
